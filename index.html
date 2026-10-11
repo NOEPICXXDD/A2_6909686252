@@ -1,244 +1,131 @@
-
 <!DOCTYPE html>
 <html lang="th">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <title>Learning Portfolio | CS100</title>
-
-    <!-- Bootstrap CSS -->
-    <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-        rel="stylesheet"
-    >
-
-    <!-- Custom CSS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Portfolio - A1</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caacupe+One&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
-
 <body>
 
-    <!-- Navigation -->
-    <nav class="navbar navbar-dark site-navbar">
-        <div class="container nav-content">
-            <a class="navbar-brand" href="#home">
-                <img src="media/cstu.png" alt="CS TU Logo">
-            </a>
-
-            <div class="nav-labels">
-                <a href="#about">About Me</a>
-                <a href="#portfolio">Portfolio</a>
+    <nav>
+        <div class="container">
+            <div class="nav-con">
+                <div class="logo">
+                    <img src="media/cstu.png" alt="CS TU Logo">
+                </div>
+                <div class="menu">
+                    <a href="#what-i-built" class="menu-link">What I Built In A1</a>
+                    <a href="#how-i-built" class="menu-link">How I Built It</a>
+                    <a href="#reflection" class="menu-link">Reflection</a>
+                    <a href="#portfolio" class="menu-link">Portfolio</a>
+                    <p>TU92</p>
+                    <p>CSTU41</p>
+                </div>
             </div>
         </div>
     </nav>
 
-    <main id="home" class="container py-4 py-md-5">
-
-        <!-- About Me -->
-        <section id="about" class="mb-5">
-            <div class="row g-4 align-items-center">
-
-                <div class="col-12 col-md-4 text-center">
-                    <img
-                        src="media/profile.jpg"
-                        alt="รูปโปรไฟล์"
-                        class="profile-img"
-                    >
+    <main class="container">
+        
+        <section id="about">
+            <div class="about-container">
+                <div class="about-img">
+                    <img src="media/profile.jpg" alt="รูปโปรไฟล์ วรโชติ จันทร์สืบสาย">
                 </div>
-
-                <div class="col-12 col-md-8">
-                    <div class="content-card">
-                        <h1 class="section-title">About Me</h1>
-
-                        <ul class="about-list">
-                            <li>
-                                <strong>ชื่อ-นามสกุล:</strong>
-                                นายวรโชติ จันทร์สืบสาย
-                            </li>
-                            <li>
-                                <strong>คณะ/สาขา:</strong>
-                                วิทยาการคอมพิวเตอร์ มหาวิทยาลัยธรรมศาสตร์
-                            </li>
-                            <li>
-                                <strong>รหัสนักศึกษา:</strong>
-                                6909686252
-                            </li>
-                            <li>
-                                <strong>งานอดิเรก:</strong>
-                                เดินเล่น ฟังเพลง เล่นเกม
-                            </li>
-                            <li>
-                                <strong>ความสนใจ:</strong>
-                                การเขียนโปรแกรม พัฒนาแอปพลิเคชัน
-                                คอมพิวเตอร์กราฟิก และการปั้นโมเดล
-                            </li>
-                        </ul>
-
-                        <hr>
-
-                        <p class="mb-0">
-                            <strong>มหาวิทยาลัย:</strong>
-                            <a
-                                href="https://www.tu.ac.th/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                มหาวิทยาลัยธรรมศาสตร์
-                            </a>
+                
+                <div class="about-card">
+                    <h2>About Me</h2>
+                    <ul>
+                        <li><p><strong>ชื่อ-นามสกุล:</strong> นายวรโชติ จันทร์สืบสาย</p></li>
+                        <li><p><strong>คณะ/สาขา:</strong> วิทยาการคอมพิวเตอร์ มหาวิทยาลัยธรรมศาสตร์</p></li>
+                        <li><p><strong>รหัสนักศึกษา:</strong> 6909686252</p></li>
+                        <li><p><strong>งานอดิเรก:</strong> เดินเล่น ฟังเพลง เล่นเกม</p></li>
+                        <li><p><strong>ความสนใจ:</strong> การเขียนโปรแกรม พัฒนาแอปพลิเคชัน คอมพิวเตอร์กราฟฟิก ปั้นโมเดล</p></li>
+                    </ul>
+                    
+                    <div class="tu-section">
+                        <hr class="divider">
+                        <h3>เกี่ยวกับมหาวิทยาลัย</h3>
+                        <p class="tu-link">
+                            <strong>มหาวิทยาลัย:</strong> <a href="https://www.tu.ac.th/" target="_blank" rel="noopener noreferrer">มหาวิทยาลัยธรรมศาสตร์</a>
                         </p>
                     </div>
                 </div>
-
             </div>
         </section>
 
-        <!-- Portfolio -->
-        <section id="portfolio" class="mb-5">
-            <h2 class="section-title mb-4">My Portfolio</h2>
+        <section id="what-i-built">
+            <div class="built-card">
+                <h2>What I Built in A1: My First Learning Portfolio</h2>
+                <p>เว็บไซต์นี้เป็น Learning Portfolio แบบหน้าเดียว สำหรับ Assignment 1</p>
+                
+                <p class="sub-title"><strong>องค์ประกอบหลัก:</strong></p>
+                <ul>
+                    <li>Navbar, รูปภาพ, รายการ และลิงก์ของมหาวิทยาลัย</li>
+                    <li>About ME, What I Built, How I Built It และ Reflection</li>
+                </ul>
 
-            <div class="row g-4">
-
-                <!-- Portfolio Item 1 -->
-                <div class="col-12 col-lg-6">
-                    <article class="content-card portfolio-card h-100">
-
-                        <h3 class="item-title">
-                            CS100 A1: My First Learning Portfolio
-                        </h3>
-
-                        <p class="item-meta">
-                            <strong>Type:</strong> Course Assignment
-                        </p>
-
-                        <p>
-                            <strong>Date:</strong>
-                            [ใส่วันที่หรือช่วงเวลาที่ทำ A1 จริง]
-                        </p>
-
-                        <p>
-                            <strong>Role:</strong>
-                            Individual Developer
-                        </p>
-
-                        <p>
-                            <strong>Description:</strong>
-                            พัฒนาเว็บไซต์ Learning Portfolio แบบหน้าเดียว
-                            โดยใช้ HTML และ CSS เพื่อแนะนำตัวเอง
-                            และนำเสนอขั้นตอนการสร้างเว็บไซต์
-                        </p>
-
-                        <p>
-                            <strong>Skills:</strong>
-                            HTML, CSS, Flexbox, Web Layout
-                        </p>
-
-                        <div class="reflection">
-                            <h4>Reflection</h4>
-
-                            <p>
-                                <strong>What I did:</strong>
-                                สร้างหน้าเว็บแนะนำตัว เพิ่มรูปภาพ
-                                ลิงก์มหาวิทยาลัย และส่วนอธิบายการพัฒนา
-                            </p>
-
-                            <p>
-                                <strong>What I learned:</strong>
-                                เข้าใจโครงสร้าง HTML และการใช้ CSS
-                                ในการตกแต่งและจัดวางหน้าเว็บไซต์มากขึ้น
-                            </p>
-
-                            <p>
-                                <strong>Challenge:</strong>
-                                การจัดวางข้อมูลที่มีหลายหัวข้อให้เป็นระเบียบ
-                                โดยใช้ Flexbox เพื่อแยกส่วนเนื้อหา
-                            </p>
-
-                            <p>
-                                <strong>Next step:</strong>
-                                ต้องการเรียนรู้การใช้ HTML และ CSS เพิ่มเติม
-                                และพัฒนาเว็บไซต์ให้มีฟีเจอร์และรูปแบบที่หลากหลายขึ้น
-                            </p>
-                        </div>
-
-                        <div class="evidence">
-                            <strong>Evidence:</strong>
-                            <p class="mb-0">
-                                [เพิ่มลิงก์ GitHub Repository หรือเว็บไซต์ A1
-                                ที่เปิดตรวจสอบได้]
-                            </p>
-                        </div>
-
-                    </article>
+                <div class="analysis-box">
+                    <p><strong>Client / Server:</strong> ถ้ามีการเปิดจากไฟล์เครื่องตนเองจะมีเฉพาะ <strong>Client (Web Browser)</strong> เท่านั้น ยังไม่มี Web Server เพราะมีการ RUN ไฟล์โดยตรงไม่ต้องผ่าน HTTP Request/Response</p>
                 </div>
-
-                <!-- Portfolio Item 2: Fill in a real project -->
-                <div class="col-12 col-lg-6">
-                    <article class="content-card portfolio-card h-100">
-
-                        <h3 class="item-title">
-                            Portfolio Item 2
-                        </h3>
-
-                        <p>
-                            ส่วนนี้ยังรอเลือกผลงานจริงของคุณ
-                            ก่อนส่งงานต้องแทนที่ข้อความทั้งหมดในส่วนนี้
-                        </p>
-
-                        <p>
-                            <strong>Title:</strong>
-                            [ชื่อผลงาน]
-                        </p>
-
-                        <p>
-                            <strong>Type:</strong>
-                            [ประเภทผลงาน]
-                        </p>
-
-                        <p>
-                            <strong>Date:</strong>
-                            [วันที่หรือช่วงเวลาที่ทำจริง]
-                        </p>
-
-                        <p>
-                            <strong>Role:</strong>
-                            [บทบาทที่รับผิดชอบจริง]
-                        </p>
-
-                        <p>
-                            <strong>Description:</strong>
-                            [อธิบายผลงานและสิ่งที่คุณทำ]
-                        </p>
-
-                        <p>
-                            <strong>Skills:</strong>
-                            [ทักษะที่ใช้จริง]
-                        </p>
-
-                        <div class="reflection">
-                            <h4>Reflection</h4>
-                            <p><strong>What I did:</strong> [สิ่งที่ทำ]</p>
-                            <p><strong>What I learned:</strong> [สิ่งที่เรียนรู้]</p>
-                            <p><strong>Challenge:</strong> [ปัญหาและวิธีแก้]</p>
-                            <p><strong>Next step:</strong> [สิ่งที่อยากพัฒนาต่อ]</p>
-                        </div>
-
-                        <div class="evidence">
-                            <strong>Evidence:</strong>
-                            <p class="mb-0">
-                                [เพิ่มลิงก์หรือหลักฐานของผลงานจริง]
-                            </p>
-                        </div>
-
-                    </article>
-                </div>
-
             </div>
         </section>
 
-        <footer class="site-footer text-center">
-            <p class="mb-0">Learning Portfolio | CS100</p>
-        </footer>
+        <section id="how-i-built">
+            <div class="built-card">
+                <h2>How I Built It</h2>
+                <p class="sub-title"><strong>ขั้นตอนการพัฒนา:</strong></p>
+                <ul>
+                    <li><strong>1. ออกแบบ:</strong> วางแผนโครงสร้างเลย์เอาต์หน้าเว็บ</li>
+                    <li><strong>2. เขียน HTML:</strong> สร้างโครงสร้างแต่ละส่วนของ HTML</li>
+                    <li><strong>3. เพิ่มข้อมูล:</strong> ใส่รูปภาพและลิงก์มหาวิทยาลัย</li>
+                    <li><strong>4. ตกแต่งด้วย CSS:</strong> จัดสไตล์และวางเลย์เอาต์ด้วย Flexbox</li>
+                    <li><strong>5. ตรวจสอบ:</strong> ลอง RUN ตรวจสอบและปรับปรุงทีละ box</li>
+                </ul>
+                
+                <h4 class="sub-title">เครื่องมือ และแหล่งข้อมูลในการเรียนรู้:</h4>
+                <p>VS Code, Google Chrome, YouTube</p>
+            </div>
+        </section>
+
+        <section id="reflection">
+            <div class="built-card">
+                <h2>Reflection</h2>
+                
+                <h4 class="sub-title">ปัญหาและวิธีแก้:</h4>
+                <p>คือการตกแต่งข้อมูลและจัดวางเลย์เอาต์ เพราะมีหัวข้อค่อนข้างเยอะทำให้อ่านยากและไม่เป็นระเบียบ แก้ไขโดยใช้ Flexbox ทำให้สามารถแยกหัวข้อออกได้เป็นระเบียบและอ่านง่าย</p>
+                
+                <h4 class="sub-title">สิ่งที่ได้เรียนรู้:</h4>
+                <p>ได้ลงมือทำหน้าเว็บเอง เข้าใจโครงสร้างของ HTML และ CSS มากขึ้น ฝึกออกแบบและตกแต่งหน้าเว็บ และได้ลองใช้คำสั่งใหม่ๆ</p>
+                
+                <h4 class="sub-title">แนวทางพัฒนาต่อ:</h4>
+                <p>ถ้าสามารถใช้ JavaScript ได้ผมก็อยากลองใช้เพื่อเพิ่มฟีเจอร์ใหม่ๆ ลองใช้คำสั่งอื่นๆของ HTML และ CSS เพื่อให้ตัวเว็บมีความหลากหลายของฟีเจอร์ และเพิ่มความสวยงาม</p>
+            </div>
+        </section>
+
+        <section id="portfolio">
+    <h2>My Portfolio</h2>
+    <p>///</p>
+
+    <div class="row g-4">
+        <div class="col-12 col-lg-6">
+            <div class="built-card h-100">
+                <h3>Portfolio Item 1: Learning Portfolio A1</h3>
+            </div>
+        </div>
+
+        <div class="col-12 col-lg-6">
+            <div class="built-card h-100">
+                <h3>Portfolio Item 2: ผลงานอื่น</h3>
+            </div>
+        </div>
+    </div>
+</section>
 
     </main>
 
