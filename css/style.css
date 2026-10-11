@@ -1,0 +1,174 @@
+
+/* ---------- Base styles ---------- */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffe5ec;
+    color: #333;
+    line-height: 1.7;
+}
+
+a {
+    color: #a60025;
+}
+
+a:hover {
+    color: #76001a;
+}
+
+/* ---------- Navigation ---------- */
+.site-navbar {
+    background-color: #b80228;
+    padding: 0.75rem 0;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+.navbar-brand {
+    margin: 0;
+}
+
+.navbar-brand img {
+    display: block;
+    width: auto;
+    height: 45px;
+    max-width: 100%;
+}
+
+.nav-labels {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.nav-labels a {
+    color: #ffd13f;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-labels a:hover {
+    text-decoration: underline;
+}
+
+/* ---------- About Me ---------- */
+.profile-img {
+    width: 180px;
+    height: 220px;
+    max-width: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* ---------- Cards ---------- */
+.content-card {
+    min-width: 0;
+    padding: 25px 30px;
+    background-color: #fff;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.section-title {
+    margin-bottom: 1.25rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #b80228;
+    color: #222;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.item-title {
+    margin-bottom: 1rem;
+    color: #8f001f;
+    font-size: 1.35rem;
+    font-weight: bold;
+}
+
+.item-meta {
+    color: #666;
+}
+
+.about-list {
+    padding-left: 1.25rem;
+}
+
+.about-list li {
+    margin-bottom: 0.5rem;
+}
+
+/* ---------- Reflection and evidence ---------- */
+.reflection {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background-color: #fff5f7;
+    border-left: 4px solid #b80228;
+    border-radius: 0 8px 8px 0;
+}
+
+.reflection h4 {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.reflection p {
+    margin-bottom: 0.75rem;
+}
+
+.evidence {
+    margin-top: 1.25rem;
+    padding-top: 1rem;
+    border-top: 1px solid #eee;
+    overflow-wrap: anywhere;
+}
+
+/* ---------- Footer ---------- */
+.site-footer {
+    padding: 1.25rem;
+    color: #6b2437;
+}
+
+/* ---------- Small screens ---------- */
+@media (max-width: 575.98px) {
+    .nav-content {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .nav-labels {
+        gap: 1.25rem;
+    }
+
+    .navbar-brand img {
+        height: 38px;
+    }
+
+    .content-card {
+        padding: 20px 18px;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .item-title {
+        font-size: 1.2rem;
+    }
+
+    .profile-img {
+        width: 150px;
+        height: 185px;
+    }
+}
